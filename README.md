@@ -80,6 +80,13 @@ Previously, feeders were returned to storage after each project with no record o
 
 <img width="524" alt="image" src="https://github.com/user-attachments/assets/48600cf0-d909-44c9-a948-3eb2f230d826" />
 
+<img width="554" alt="image" src="https://github.com/user-attachments/assets/9a97c8b4-70e4-4803-a8fc-68168088ced3" />
+
+![Feeder Racks Used in Assembly]
+
+![Feeders](https://github.com/user-attachments/assets/520416e5-b042-45d8-8421-a99354d77238)
+
+
 
 If you have questions or need assistance, click the **Help** button in the application for detailed guidance.
 
