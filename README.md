@@ -78,6 +78,9 @@ Previously, feeders were returned to storage after each project with no record o
 
 ## Support
 
+<img width="524" alt="image" src="https://github.com/user-attachments/assets/48600cf0-d909-44c9-a948-3eb2f230d826" />
+
+
 If you have questions or need assistance, click the **Help** button in the application for detailed guidance.
 
 ---
