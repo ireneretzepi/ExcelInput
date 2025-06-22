@@ -1,10 +1,85 @@
 # ExcelInput
-While working in SoftIron, I created an application for helping the process of setting the feeders into the machine that created the components of the hyperdrives. Many feeders where re-used in next projects in the company, but when each project finished they where put back into storage as they had no knowledge which components where the same for the ten next projects. To prevent this the compnents of the first where 
 
-There is a button "Add Excel File" that adds the excel files that contains information for the feeders like the Manufacturer Part Number   and the name of the excel file is stored in the variable FileName and its path in FilePath
-There is also a "Remove Excel File" button that has displays a drop down box with all the Excel files added until now and the user can select.
-There is also a "Select Excel File" drop down box that contains all excel files added until now. When you select a file, you have to select the next file for the "Complete" Button to be enabled. You can select more than one next files, but minimum files selected are 2 files. Then you can press the "Complete" Button that makes the comparison of the Manufacturer Part Numbers between the selected excel file and as many next files you have selected. It then creates a new excel file that is a copy of the previous with an added column named "Re-kit". In the first column in the same rows as the common Manufacturer Part Numbers are the commons between the file selected and the next file. In the next column is the commons between the selected and the next next selected and so on. There is a variable named selected1 that keeps track of which projects(Excel Files) are selected. If you unselect the next file, the complete button is disabled.
+## Overview
 
-Once you press the "Complete Button" the "View" button is enabled for the user to view the newly created excel file. There are also "Up"and "Down" buttons so you can change the sequence of the selected file. These buttons are disabled for each selected excel file once you have pressed complete. 
+**ExcelInput** is a specialized application developed at SoftIron to streamline and optimize the process of setting up feeders in machines that assemble hyperdrive components. Its main goal is to track and compare component usage across multiple projects, making it easier to identify reusable feeders and avoid redundant storage and setup.
 
-There is also a possility to Save the state of the program and reopen it later. If the user has a question of how to work with the program, there is a Help Button on top that contains guidlines of how to use it.
+Previously, feeders were returned to storage after each project with no record of which components were common across future projects. ExcelInput solves this by allowing users to compare Manufacturer Part Numbers (MPNs) from multiple project files, making re-kitting and resource management more efficient.
+
+---
+
+## Features
+
+- **Add Excel File:**  
+  Easily add Excel files containing feeder/component information. The application stores both the file name (`FileName`) and its path (`FilePath`).
+
+- **Remove Excel File:**  
+  Remove any previously added Excel file using a dropdown list of all currently loaded files.
+
+- **Select Excel File:**  
+  Choose from a dropdown of added files to select the "base" file for comparison.
+
+- **Multi-File Comparison:**  
+  Select at least two files (the base file and one or more "next" files) to enable the **Complete** button. The application compares MPNs between the selected files.
+
+- **Comparison Output:**  
+  On pressing **Complete**, a new Excel file is generated. This file is a copy of the selected base file, with an added column named **Re-kit**. Each column in the new file shows the common MPNs between the base file and each of the selected next files.
+
+- **View Result:**  
+  After comparison, the **View** button is enabled, allowing users to view the newly created Excel file.
+
+- **Reorder Selection:**  
+  Use **Up** and **Down** buttons to change the sequence of selected files. These buttons are disabled after comparison is complete.
+
+- **State Saving:**  
+  Save the current state of the application and reopen it later to continue work without losing progress.
+
+- **Help & Guidelines:**  
+  A **Help** button provides users with detailed guidelines on how to use the application.
+
+---
+
+## How It Works
+
+1. **Add Project Files:**  
+   Click **Add Excel File** to import files containing feeder/component information.
+
+2. **Select Files for Comparison:**  
+   Use the **Select Excel File** dropdown to choose the base file. Then, select at least one additional file for comparison. The **Complete** button becomes active when at least two files are selected.
+
+3. **Run Comparison:**  
+   Click **Complete** to generate a new Excel file highlighting common Manufacturer Part Numbers across the selected files. The new file will have a **Re-kit** column for each comparison.
+
+4. **View Results:**  
+   Use the **View** button to open and review the generated Excel file.
+
+5. **Manage Files:**  
+   Remove files or reorder the selection as needed. Note: After running a comparison, the reorder buttons are disabled for the selected files.
+
+6. **Save/Load State:**  
+   Save your progress at any time and reload it later.
+
+7. **Get Help:**  
+   Click the **Help** button for step-by-step instructions and troubleshooting tips.
+
+---
+
+
+## Usage Example
+
+1. Add Excel files for Project A, Project B, and Project C.  
+2. Select Project A as the base file.  
+3. Select Project B and Project C as comparison files.  
+4. Click **Complete** to generate a new Excel file showing common MPNs.  
+5. Click **View** to review the results.  
+6. Save your session to continue later.
+
+---
+
+## Support
+
+If you have questions or need assistance, click the **Help** button in the application for detailed guidance.
+
+---
+
+**ExcelInput** makes feeder management and component tracking easy, efficient, and transparent—helping you make the most of your resources across all your projects!
